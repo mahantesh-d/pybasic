@@ -1,0 +1,33 @@
+CREATE TABLE sub_stock_detail_transfer (
+    sub_stock_detail_transfer_pk bigint NOT NULL,
+    create_by text,
+    create_datetime timestamp with time zone,
+    doc_ref text,
+    from_substock_key text[],
+    location_code text,
+    location_name text,
+    location_province text,
+    location_region text,
+    location_sub_region text,
+    location_subtype text,
+    location_type text,
+    mat_code_key text[],
+    serial_key text[],
+    to_substock text,
+    total_qty text,
+    transaction_id text,
+    transaction_type text,
+    transfer_substock_datetime timestamp with time zone,
+    transfer_substock_detail text[],
+    transfer_substock_detail_s text[],
+    transfer_substock_no text,
+    transfer_substock_status text,
+    update_by text,
+    update_datetime timestamp with time zone,
+    int_created_date timestamp with time zone DEFAULT now(),
+    int_updated_date timestamp with time zone,
+    int_is_deleted text
+)
+DISTRIBUTE BY HASH (sub_stock_detail_transfer_pk);
+    START WITH 1
+    INCREMENT BY 1

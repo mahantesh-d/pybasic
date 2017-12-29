@@ -1,0 +1,20 @@
+CREATE TABLE opening_hours (
+    opening_hours_pk bigint NOT NULL,
+    int_updated_date timestamp with time zone,
+    int_created_date timestamp with time zone DEFAULT now(),
+    int_is_deleted text,
+    opening_hours_id_key_0 text,
+    opening_hours_key_1 text,
+    chn_sales_grp_data text,
+    shop_area_data text,
+    day_of_week_data text,
+    time_open_data text,
+    time_close_data text,
+    created_data timestamp with time zone,
+    created_by_data text,
+    last_upd_data timestamp with time zone,
+    last_upd_by_data text,
+    modification_num_data text,
+    shop_type_data text
+)
+DISTRIBUTE BY REPLICATION;

@@ -1,0 +1,15 @@
+CREATE TABLE distibution_channel (
+    distibution_channel_pk bigint NOT NULL,
+    int_updated_date timestamp with time zone,
+    int_created_date timestamp with time zone DEFAULT now(),
+    int_is_deleted text,
+    dist_chn_code_key_0 text,
+    dist_chn_name_data text,
+    sync_sap_data text,
+    created_data timestamp with time zone,
+    created_by_data text,
+    last_upd_data timestamp with time zone,
+    last_upd_by_data text,
+    modification_num_data text
+)
+DISTRIBUTE BY REPLICATION;

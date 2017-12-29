@@ -1,0 +1,21 @@
+CREATE TABLE organization (
+    organization_pk bigint NOT NULL,
+    int_updated_date timestamp with time zone,
+    int_created_date timestamp with time zone DEFAULT now(),
+    int_is_deleted text,
+    org_code_key_0 text,
+    parent_org_code_data text,
+    org_type_data text,
+    person_org_type_data text,
+    org_name_data text,
+    org_desc_data text,
+    org_level_data text,
+    company_bu_code_data text,
+    org_status_data text,
+    created_data timestamp with time zone,
+    created_by_data text,
+    last_upd_data timestamp with time zone,
+    last_upd_by_data text,
+    modification_num_data text
+)
+DISTRIBUTE BY REPLICATION;

@@ -1,0 +1,20 @@
+CREATE TABLE vat_address (
+    vat_address_pk bigint NOT NULL,
+    int_updated_date timestamp with time zone,
+    int_created_date timestamp with time zone DEFAULT now(),
+    int_is_deleted text,
+    location_code_key_0 text,
+    owner_location_code_data text,
+    company_abbr_key_1 text,
+    vat_branch_no_key_2 text,
+    vat_address_data text,
+    created_data timestamp with time zone,
+    created_by_data text,
+    last_upd_data timestamp with time zone,
+    last_upd_by_data text,
+    modification_num_data text,
+    effective_dt_data timestamp with time zone,
+    end_dt_data timestamp with time zone,
+    vat_address_id_key_3 text
+)
+DISTRIBUTE BY REPLICATION;

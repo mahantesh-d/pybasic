@@ -1,0 +1,20 @@
+CREATE TABLE stamp_delivery (
+    ship_to_code_key0 text,
+    day_of_week_key1 text,
+    delivery_type_key3 text,
+    distribution_channel_key4 text,
+    customer_group_key5 text,
+    route_key6 text,
+    stamp_delivery_data text,
+    create_by_data text,
+    create_datetime_data timestamp with time zone,
+    update_by_data text,
+    update_datetime_key7 timestamp with time zone,
+    stamp_delivery_pk bigint NOT NULL,
+    int_created_date timestamp with time zone DEFAULT now(),
+    int_updated_date timestamp with time zone,
+    int_is_deleted text,
+    interval_time_end_key2 time without time zone,
+    interval_time_start_key1 time without time zone
+)
+DISTRIBUTE BY REPLICATION;

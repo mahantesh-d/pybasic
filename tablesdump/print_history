@@ -1,0 +1,14 @@
+CREATE TABLE print_history (
+    document_no_key0 text NOT NULL,
+    edition_data text NOT NULL,
+    transaction_type_key1 text,
+    createby_data text,
+    create_datetime_data timestamp with time zone,
+    updateby_data text,
+    update_datetime_key2 timestamp with time zone,
+    print_history_pk bigint NOT NULL,
+    int_created_date timestamp with time zone DEFAULT now(),
+    int_updated_date timestamp with time zone,
+    int_is_deleted text
+)
+DISTRIBUTE BY REPLICATION;

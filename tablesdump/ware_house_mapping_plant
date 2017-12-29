@@ -1,0 +1,17 @@
+CREATE TABLE ware_house_mapping_plant (
+    ware_house_mapping_plant_pk bigint NOT NULL,
+    int_updated_date timestamp with time zone,
+    int_created_date timestamp with time zone DEFAULT now(),
+    int_is_deleted text,
+    ware_house_code text,
+    company text,
+    plant text,
+    storage text,
+    description text,
+    active_flag text,
+    create_by text,
+    create_date_time timestamp with time zone,
+    update_by text,
+    update_date_time timestamp with time zone
+)
+DISTRIBUTE BY REPLICATION;

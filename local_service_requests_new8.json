@@ -1,0 +1,407 @@
+{
+	"local_service_requests_new8_pk": {
+		"int": 1
+	},
+	"actor": {
+		"string": "dasda"
+	},
+	"application_detail": {
+		"array": [{
+			"string": "asdasd"
+		}]
+	},
+	"ba_category": {
+		"string": "dasda"
+	},
+	"ba_segment": {
+		"string": "dasda"
+	},
+	"bano": {
+		"array": [{
+			"string": "asdasd"
+		}]
+	},
+	"billing_system": {
+		"string": "dasda"
+	},
+	"bso_key": {
+		"array": [{
+			"string": "asdasd"
+		}]
+	},
+	"bwo_id": {
+		"array": [{
+			"string": "asdasd"
+		}]
+	},
+	"bso_status_key": {
+		"array": [{
+			"string": "asdasd"
+		}]
+	},
+	"bso_error_message_key": {
+		"array": [{
+			"string": "asdasd"
+		}]
+	},
+	"cano": {
+		"string": "dasda"
+	},
+	"channel": {
+		"string": "dasda"
+	},
+	"charge_type": {
+		"string": "dasda"
+	},
+	"complete_dt": {
+		"string": "dasda"
+	},
+	"destination": {
+		"array": [{
+			"string": "asdasd"
+		}]
+	},
+	"error_message": {
+		"string": "dasda"
+	},
+	"imsi_key": {
+		"array": [{
+			"string": "asdasd"
+		}]
+	},
+	"last_upd": {
+		"string": "dasda"
+	},
+	"local_service_requests_s": {
+		"array": [{
+			"string": "asdasd"
+		}]
+	},
+	"location_cd": {
+		"string": "dasda"
+	},
+	"msisdn_key": {
+		"array": [{
+			"string": "asdasd"
+		}]
+	},
+	"ne_id": {
+		"string": "dasda"
+	},
+	"order_date": {
+		"long": 1
+	},
+	"order_date_str": {
+		"string": "dasda"
+	},
+	"order_ref": {
+		"string": "dasda"
+	},
+	"order_status": {
+		"string": "dasda"
+	},
+	"order_sub_type": {
+		"array": [{
+			"string": "asdasd"
+		}]
+	},
+	"order_type": {
+		"string": "dasda"
+	},
+	"order_item_status_key": {
+		"array": [{
+			"string": "asdasd"
+		}]
+	},
+	"order_item_error_message_key": {
+		"array": [{
+			"string": "asdasd"
+		}]
+	},
+	"order_item_error_date_key": {
+		"array": [{
+			"string": "asdasd"
+		}]
+	},
+	"pgz_record_type": {
+		"string": "dasda"
+	},
+	"pgz_task_id": {
+		"string": "dasda"
+	},
+	"product_name_key": {
+		"array": [{
+			"string": "asdasd"
+		}]
+	},
+	"promotion_action_key": {
+		"array": [{
+			"string": "asdasd"
+		}]
+	},
+	"promotion_code_key": {
+		"array": [{
+			"string": "asdasd"
+		}]
+	},
+	"req_status": {
+		"string": "dasda"
+	},
+	"request_id": {
+		"array": [{
+			"string": "asdasd"
+		}]
+	},
+	"resp_status": {
+		"array": [{
+			"string": "asdasd"
+		}]
+	},
+	"sano": {
+		"string": "dasda"
+	},
+	"service_action_key": {
+		"array": [{
+			"string": "asdasd"
+		}]
+	},
+	"service_code_key": {
+		"array": [{
+			"string": "asdasd"
+		}]
+	},
+	"sim_serial_no": {
+		"string": "dasda"
+	},
+	"submitted_date": {
+		"long": 1
+	},
+	"submitted_date_str": {
+		"string": "dasda"
+	},
+	"subscriberid1_key": {
+		"array": [{
+			"string": "asdasd"
+		}]
+	},
+	"subscriberid2_key": {
+		"array": [{
+			"string": "asdasd"
+		}]
+	},
+	"subscriberid3_key": {
+		"array": [{
+			"string": "asdasd"
+		}]
+	},
+	"user_id": {
+		"string": "dasda"
+	},
+	"user_sys": {
+		"string": "dasda"
+	},
+	"wo_header_error_message_key": {
+		"array": [{
+			"string": "asdasd"
+		}]
+	},
+	"wo_header_status_key": {
+		"array": [{
+			"string": "asdasd"
+		}]
+	},
+	"wo_header_error_date_key": {
+		"array": [{
+			"string": "asdasd"
+		}]
+	},
+	"bso_error_date_key": {
+		"array": [{
+			"string": "asdasd"
+		}]
+	},
+	"int_created_date": {
+		"long": 1
+	},
+	"int_created_date_str": {
+		"string": "dasda"
+	},
+	"int_updated_date": {
+		"long": 1
+	},
+	"int_updated_date_str": {
+		"string": "dasda"
+	},
+	"int_is_deleted": {
+		"string": "dasda"
+	},
+	"order_info_error_date_new": {
+		"long": 1
+	},
+	"order_info_error_date_new_str": {
+		"string": "dasda"
+	},
+	"order_info_error_date_time": {
+		"long": 1
+	},
+	"order_info_error_date_time_str": {
+		"string": "dasda"
+	},
+	"order_info_error_date": {
+		"long": 1
+	},
+	"order_info_error_date_str": {
+		"string": "dasda"
+	},
+	"request_id_int_field": {
+		"string": "dasda"
+	},
+	"bwo_id_int_field": {
+		"string": "dasda"
+	},
+	"retry_count": {
+		"string": "dasda"
+	},
+	"val1_key": {
+		"array": [{
+			"string": "asdasd"
+		}]
+	},
+	"val2_key": {
+		"array": [{
+			"string": "asdasd"
+		}]
+	},
+	"val3_key": {
+		"array": [{
+			"string": "asdasd"
+		}]
+	},
+	"val4_key": {
+		"array": [{
+			"string": "asdasd"
+		}]
+	},
+	"val5_key": {
+		"array": [{
+			"string": "asdasd"
+		}]
+	},
+	"val6_key": {
+		"array": [{
+			"string": "asdasd"
+		}]
+	},
+	"val7_key": {
+		"array": [{
+			"string": "asdasd"
+		}]
+	},
+	"val8_key": {
+		"array": [{
+			"string": "asdasd"
+		}]
+	},
+	"val9_key": {
+		"array": [{
+			"string": "asdasd"
+		}]
+	},
+	"val10_key": {
+		"array": [{
+			"string": "asdasd"
+		}]
+	},
+	"val1": {
+		"string": "dasda"
+	},
+	"val2": {
+		"string": "dasda"
+	},
+	"val3": {
+		"string": "dasda"
+	},
+	"val4": {
+		"string": "dasda"
+	},
+	"val5": {
+		"string": "dasda"
+	},
+	"val6": {
+		"string": "dasda"
+	},
+	"val7": {
+		"string": "dasda"
+	},
+	"val8": {
+		"string": "dasda"
+	},
+	"val9": {
+		"string": "dasda"
+	},
+	"val10": {
+		"string": "dasda"
+	},
+	"resend_flag": {
+		"string": "dasda"
+	},
+	"file_name": {
+		"string": "dasda"
+	},
+	"ref_id": {
+		"string": "dasda"
+	},
+	"lot_no": {
+		"string": "dasda"
+	},
+	"val11_key": {
+		"array": [{
+			"string": "asdasd"
+		}]
+	},
+	"val12_key": {
+		"array": [{
+			"string": "asdasd"
+		}]
+	},
+	"val13_key": {
+		"array": [{
+			"string": "asdasd"
+		}]
+	},
+	"val14_key": {
+		"array": [{
+			"string": "asdasd"
+		}]
+	},
+	"val15_key": {
+		"array": [{
+			"string": "asdasd"
+		}]
+	},
+	"val16_key": {
+		"array": [{
+			"string": "asdasd"
+		}]
+	},
+	"val17_key": {
+		"array": [{
+			"string": "asdasd"
+		}]
+	},
+	"val18_key": {
+		"array": [{
+			"string": "asdasd"
+		}]
+	},
+	"val19_key": {
+		"array": [{
+			"string": "asdasd"
+		}]
+	},
+	"val20_key": {
+		"array": [{
+			"string": "asdasd"
+		}]
+	}
+}

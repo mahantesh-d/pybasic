@@ -1,0 +1,16 @@
+CREATE TABLE config_route_group (
+    route_group_key0 text,
+    day_of_week_key1 text,
+    stamp_delivery_data text,
+    create_by_data text,
+    create_datetime_data timestamp with time zone,
+    update_by_data text,
+    update_datetime_key4 timestamp with time zone,
+    config_route_group_pk bigint NOT NULL,
+    int_created_date timestamp with time zone DEFAULT now(),
+    int_updated_date timestamp with time zone,
+    int_is_deleted text,
+    interval_time_start_key time without time zone,
+    interval_time_end_key time without time zone
+)
+DISTRIBUTE BY HASH (route_group_key0);

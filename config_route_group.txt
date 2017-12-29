@@ -1,0 +1,9 @@
+"configName_key0": "EmfcaCjc",
+"configVal1_data": "icIhmHBK",
+"configVal2_data": "eCGaakaL",
+"configVal3_data": "iedfgH",
+"createBy_data": "gKdHbk",
+"createDateTime_data": "20100718155319+0700",
+"description_data": "jbcfelCA",
+"updateBy_data": "IdMHJljj",
+"updateDateTime_key1": "20040705120543+0700"

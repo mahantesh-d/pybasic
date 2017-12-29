@@ -1,0 +1,19 @@
+CREATE TABLE warehouse_plant_storage (
+    int_updated_date timestamp with time zone,
+    int_created_date timestamp with time zone DEFAULT now(),
+    int_is_deleted text,
+    warehouse_plant_storage_pk bigint NOT NULL,
+    location_code_key0 text,
+    company_key1 text,
+    substock_key2 text,
+    quota_flag_key3 text,
+    grade_key4 text,
+    product_type_key5 text,
+    plant_data text,
+    storage_data text,
+    create_by_data text,
+    update_by_data text,
+    update_datetime_key6 timestamp with time zone,
+    create_datetime_data timestamp with time zone
+)
+DISTRIBUTE BY REPLICATION;

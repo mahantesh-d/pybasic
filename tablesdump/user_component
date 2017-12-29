@@ -1,0 +1,15 @@
+CREATE TABLE user_component (
+    group_name_key0 text,
+    program_code_key1 text,
+    component_key2 text,
+    enable_flag_data text,
+    create_by_data text,
+    create_datetime_data timestamp with time zone,
+    update_by_data text,
+    update_datetime_key3 timestamp with time zone,
+    user_component_pk bigint NOT NULL,
+    int_created_date timestamp with time zone DEFAULT now(),
+    int_updated_date timestamp with time zone,
+    int_is_deleted text
+)
+DISTRIBUTE BY HASH (user_component_pk);

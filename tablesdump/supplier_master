@@ -1,0 +1,14 @@
+CREATE TABLE supplier_master (
+    supplier_code_key0 text NOT NULL,
+    supplier_name_data text,
+    supplier_address_data text,
+    create_by_data text,
+    create_datetime_data timestamp with time zone,
+    update_by_data text,
+    update_datetime_key1 timestamp with time zone,
+    supplier_master_pk bigint NOT NULL,
+    int_created_date timestamp with time zone DEFAULT now(),
+    int_updated_date timestamp with time zone,
+    int_is_deleted text
+)
+DISTRIBUTE BY HASH (supplier_code_key0);

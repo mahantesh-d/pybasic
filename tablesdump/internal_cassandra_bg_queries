@@ -1,0 +1,8 @@
+CREATE TABLE internal_cassandra_bg_queries (
+    query text,
+    status text,
+    created_datetime timestamp with time zone,
+    last_attempt_datetime timestamp with time zone,
+    tries integer,
+    id integer DEFAULT nextval('id_seq'::regclass) NOT NULL,
+    token character varying,

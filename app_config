@@ -1,0 +1,17 @@
+CREATE TABLE app_config (
+    config_name_key0 text NOT NULL,
+    config_val1_data text,
+    config_val2_data text,
+    config_val3_data text,
+    remark_data text,
+    create_by_data text,
+    create_datetime_data timestamp with time zone,
+    update_by_data text,
+    update_datetime_key1 timestamp with time zone,
+    app_config_pk bigint NOT NULL,
+    int_created_date timestamp with time zone DEFAULT now(),
+    int_updated_date timestamp with time zone,
+    int_is_deleted text,
+    description_data text
+)
+DISTRIBUTE BY REPLICATION;

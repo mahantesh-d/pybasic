@@ -1,0 +1,35 @@
+CREATE TABLE obtain_detail (
+    obtain_detail_pk bigint NOT NULL,
+    create_by text,
+    create_datetime timestamp with time zone,
+    doc_ref text,
+    location_code text,
+    location_name text,
+    location_province text,
+    location_region text,
+    location_sub_region text,
+    location_subtype text,
+    location_type text,
+    mat_code_key text[],
+    obtain_by_sales_code_list text[],
+    obtain_datetime timestamp with time zone,
+    obtain_no text,
+    obtain_ref text,
+    obtain_status text,
+    obtaindetail text[],
+    obtaindetail_s text[],
+    sales_code_key text[],
+    serial_key text[],
+    transaction_id text,
+    transaction_type text,
+    update_by text,
+    update_datetime timestamp with time zone,
+    sales_pin_id_key text[],
+    sales_type_key text[],
+    int_created_date timestamp with time zone DEFAULT now(),
+    int_updated_date timestamp with time zone,
+    int_is_deleted text
+)
+DISTRIBUTE BY HASH (obtain_detail_pk);
+    START WITH 1
+    INCREMENT BY 1

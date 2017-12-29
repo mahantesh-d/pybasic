@@ -1,0 +1,13 @@
+CREATE TABLE user_group (
+    groupid_key0 text,
+    group_name_data text,
+    create_by_data text,
+    create_datetime_data timestamp with time zone,
+    update_by_data text,
+    update_datetime_key1 timestamp with time zone,
+    user_group_pk bigint NOT NULL,
+    int_created_date timestamp with time zone DEFAULT now(),
+    int_updated_date timestamp with time zone,
+    int_is_deleted text
+)
+DISTRIBUTE BY HASH (groupid_key0);

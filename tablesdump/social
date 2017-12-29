@@ -1,0 +1,23 @@
+CREATE TABLE social (
+    social_pk bigint NOT NULL,
+    int_updated_date timestamp with time zone,
+    int_created_date timestamp with time zone DEFAULT now(),
+    int_is_deleted text,
+    social_id_key_0 text,
+    social_type_data text,
+    social_name_data text,
+    social_contact_data text,
+    social_ref_id_data text,
+    social_fanclub_type_data text,
+    social_first_name_data text,
+    social_last_name_data text,
+    recent_used_dt_data timestamp with time zone,
+    recent_channel_used_data text,
+    created_data timestamp with time zone,
+    created_by_data text,
+    last_upd_data timestamp with time zone,
+    last_upd_by_data text,
+    modification_num_data text,
+    social_mainflg_data text
+)
+DISTRIBUTE BY REPLICATION;

@@ -1,0 +1,18 @@
+CREATE TABLE mapping_region (
+    mapping_region_pk bigint NOT NULL,
+    int_updated_date timestamp with time zone,
+    int_created_date timestamp with time zone DEFAULT now(),
+    int_is_deleted text,
+    province_code_key_0 text,
+    sap_province_code_data text,
+    sale_sub_region_code_data text,
+    addr_sub_region_code_data text,
+    sap_region_grp_code_data text,
+    created_data timestamp with time zone,
+    created_by_data text,
+    last_upd_data timestamp with time zone,
+    last_upd_by_data text,
+    modification_num_data text,
+    region_code_key_2 text
+)
+DISTRIBUTE BY REPLICATION;

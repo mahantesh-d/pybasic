@@ -1,0 +1,22 @@
+CREATE TABLE person_organization (
+    person_organization_pk bigint NOT NULL,
+    int_updated_date timestamp with time zone,
+    int_created_date timestamp with time zone DEFAULT now(),
+    int_is_deleted text,
+    person_code_key_0 text,
+    org_code_key_1 text,
+    position_data text,
+    position_type_data text,
+    job_description_data text,
+    sub_area_data text,
+    sales_region_data text,
+    sales_province_data text,
+    boss_code_data text,
+    primary_flg_data text,
+    created_data timestamp with time zone,
+    created_by_data text,
+    last_upd_data timestamp with time zone,
+    last_upd_by_data text,
+    modification_num_data text
+)
+DISTRIBUTE BY REPLICATION;

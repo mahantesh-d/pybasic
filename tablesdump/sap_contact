@@ -1,0 +1,20 @@
+CREATE TABLE sap_contact (
+    sap_contact_pk bigint NOT NULL,
+    int_updated_date timestamp with time zone,
+    int_created_date timestamp with time zone DEFAULT now(),
+    int_is_deleted text,
+    sap_code_key_0 text,
+    name_data text,
+    industries_data text,
+    mobile_data text,
+    phone_data text,
+    phone_ext_data text,
+    fax_data text,
+    fax_ext_data text,
+    created_data timestamp with time zone,
+    created_by_data text,
+    last_upd_data timestamp with time zone,
+    last_upd_by_data text,
+    modification_num_data text
+)
+DISTRIBUTE BY REPLICATION;

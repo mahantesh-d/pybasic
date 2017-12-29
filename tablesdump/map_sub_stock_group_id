@@ -1,0 +1,17 @@
+CREATE TABLE map_sub_stock_group_id (
+    map_sub_stock_group_id_pk bigint NOT NULL,
+    int_updated_date timestamp with time zone,
+    int_created_date timestamp with time zone DEFAULT now(),
+    int_is_deleted text,
+    location_type_key0 text,
+    location_sub_type_key1 text,
+    region_key2 text,
+    location_code_key3 text,
+    sub_stock_group_id text,
+    create_by_data text,
+    create_date_time_data timestamp with time zone,
+    update_by_data text,
+    update_datetime_key4 timestamp with time zone,
+    chn_sale_code_data text
+)
+DISTRIBUTE BY REPLICATION;

@@ -1,0 +1,17 @@
+CREATE TABLE mapping_company (
+    mapping_company_pk bigint NOT NULL,
+    int_updated_date timestamp with time zone,
+    int_created_date timestamp with time zone DEFAULT now(),
+    int_is_deleted text,
+    dist_chn_code_key0 text,
+    chn_sales_code_key1 text,
+    company_id_key2 text,
+    main_flag_data text,
+    remark_data text,
+    created_data timestamp with time zone,
+    created_by_data text,
+    last_upd_data timestamp with time zone,
+    last_upd_by_data text,
+    map_company_key3 text
+)
+DISTRIBUTE BY REPLICATION;

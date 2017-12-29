@@ -1,0 +1,20 @@
+CREATE TABLE company (
+    company_key0 text NOT NULL,
+    company_name_data text,
+    company_address_data text,
+    sale_organize_data text,
+    prefix_company_name_data text,
+    active_flag_data text,
+    faxno_data text,
+    telno_data text,
+    taxno_data text,
+    create_by_data text,
+    create_datetime_data timestamp with time zone,
+    update_by_data text,
+    update_datetime_key1 timestamp with time zone,
+    company_pk bigint NOT NULL,
+    int_created_date timestamp with time zone DEFAULT now(),
+    int_updated_date timestamp with time zone,
+    int_is_deleted text
+)
+DISTRIBUTE BY HASH (company_key0);

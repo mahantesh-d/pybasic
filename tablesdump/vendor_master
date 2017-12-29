@@ -1,0 +1,14 @@
+CREATE TABLE vendor_master (
+    vendor_code_key0 text NOT NULL,
+    vendor_name_data text,
+    vendor_address_data text,
+    create_by_data text,
+    create_datetime_data timestamp with time zone,
+    update_by_data text,
+    update_datetime_key1 timestamp with time zone,
+    vendor_master_pk bigint NOT NULL,
+    int_created_date timestamp with time zone DEFAULT now(),
+    int_updated_date timestamp with time zone,
+    int_is_deleted text
+)
+DISTRIBUTE BY HASH (vendor_code_key0);

@@ -1,0 +1,5 @@
+n = input("Enter the number: ")
+ll = list(n)
+tt = tuple(n)
+print(ll)
+print(tt)

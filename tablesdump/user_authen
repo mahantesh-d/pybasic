@@ -1,0 +1,13 @@
+CREATE TABLE user_authen (
+    group_name_key0 text,
+    program_code_key1 text,
+    create_by_data text,
+    create_datetime_data timestamp with time zone,
+    update_by_data text,
+    update_datetime_key2 timestamp with time zone,
+    user_authen_pk bigint NOT NULL,
+    int_created_date timestamp with time zone DEFAULT now(),
+    int_updated_date timestamp with time zone,
+    int_is_deleted text
+)
+DISTRIBUTE BY HASH (group_name_key0);

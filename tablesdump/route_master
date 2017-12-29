@@ -1,0 +1,16 @@
+CREATE TABLE route_master (
+    route_abbr_key0 text,
+    ship_to_code_data text,
+    route_name_data text,
+    create_by_data text,
+    create_datetime_data timestamp with time zone,
+    update_by_data text,
+    update_datetime_key1 timestamp with time zone,
+    route_master_pk bigint NOT NULL,
+    int_created_date timestamp with time zone DEFAULT now(),
+    int_updated_date timestamp with time zone,
+    int_is_deleted text,
+    estimate_arrive_time_data time without time zone,
+    interval_route_time_data time without time zone
+)
+DISTRIBUTE BY HASH (route_abbr_key0);

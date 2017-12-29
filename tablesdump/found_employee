@@ -1,0 +1,3 @@
+CREATE TABLE found_employee (
+    name text,
+    lastname text,

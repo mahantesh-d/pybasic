@@ -1,0 +1,14 @@
+CREATE TABLE product_group (
+    product_group_pk bigint NOT NULL,
+    int_updated_date timestamp with time zone,
+    int_created_date timestamp with time zone DEFAULT now(),
+    int_is_deleted text,
+    product_group_id_key_0 text,
+    product_group_name_data text,
+    created_data timestamp with time zone,
+    created_by_data text,
+    last_upd_data timestamp with time zone,
+    last_upd_by_data text,
+    modification_num_data text
+)
+DISTRIBUTE BY REPLICATION;

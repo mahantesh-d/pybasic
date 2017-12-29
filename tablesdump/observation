@@ -1,0 +1,18 @@
+CREATE TABLE observation (
+    observation_pk bigint NOT NULL,
+    int_updated_date timestamp with time zone,
+    int_created_date timestamp with time zone DEFAULT now(),
+    int_is_deleted text,
+    observation_id_key_0 text,
+    observation_code_data text,
+    observation_name_data text,
+    observation_type_data text,
+    observation_start_dt_data timestamp with time zone,
+    observation_end_dt_data text,
+    created_data timestamp with time zone,
+    created_by_data text,
+    last_upd_data timestamp with time zone,
+    last_upd_by_data text,
+    modification_num_data text
+)
+DISTRIBUTE BY REPLICATION;

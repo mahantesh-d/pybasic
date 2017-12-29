@@ -1,0 +1,41 @@
+CREATE TABLE check_stock_detail (
+    check_stock_detail_pk bigint NOT NULL,
+    brand_key text[],
+    check_stock_detail text[],
+    check_stock_detail_s text[],
+    commercial_name_key text[],
+    company_key text[],
+    confirm_datetime timestamp with time zone,
+    confirm_no text,
+    confirm_user text,
+    create_by text,
+    create_datetime timestamp with time zone,
+    location_code text,
+    location_name text,
+    mat_code_key text[],
+    mat_description_key text[],
+    model_key text[],
+    product_subtype_key text[],
+    product_type_key text[],
+    serial_match_key text[],
+    serial_not_found_key text[],
+    stock_on_hand_datetime timestamp with time zone,
+    substock_key text[],
+    transaction_id text,
+    transaction_type text,
+    update_by text,
+    update_datetime timestamp with time zone,
+    int_created_date timestamp with time zone DEFAULT now(),
+    int_updated_date timestamp with time zone,
+    int_is_deleted text,
+    location_type text,
+    location_sub_type text,
+    location_region text,
+    location_sub_region text,
+    location_province text,
+    serial_not_scan_key text[]
+)
+DISTRIBUTE BY HASH (check_stock_detail_pk);
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE

@@ -1,0 +1,20 @@
+CREATE TABLE location_ship_to (
+    location_code_key0 text NOT NULL,
+    ship_to_code_key1 text NOT NULL,
+    ship_to_default_flag_data text,
+    create_by_data text,
+    create_datetime_data timestamp with time zone,
+    update_by_data text,
+    update_datetime_key2 timestamp with time zone,
+    location_ship_to bigint NOT NULL,
+    int_created_date timestamp with time zone DEFAULT now(),
+    int_updated_date timestamp with time zone,
+    int_is_deleted text,
+    location_ship_to_pk bigint NOT NULL
+)
+DISTRIBUTE BY REPLICATION;
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;

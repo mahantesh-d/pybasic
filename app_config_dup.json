@@ -1,0 +1,56 @@
+{
+    "config_name_key0":  {
+        "string": "icIhmHBK"
+    },
+    "config_val1_data": {
+        "string": "icIhmHBK"
+    },
+    "config_val2_data": {
+        "string": "eCGaakaL"
+    },
+    "config_val3_data": {
+        "string": "iedfgH"
+    },
+    "remark_data": {
+        "string": "gKdHbk"
+    },
+    "create_by_data": {
+        "string": "gKdHbk"
+    },
+    "create_datetime_data": {
+        "long": 1279468399
+    },
+    "create_datetime_data_str": {
+        "string": "20100718155319+0700"
+    },
+    "update_by_data": {
+        "string": "jbcfelCA"
+    },
+    "update_datetime_key1": {
+        "long": 1279468399
+    },
+    "update_datetime_key1_str": {
+        "string": "20100718155319+0700"
+    },
+    "app_config_pk": {
+        "int": 1
+    },
+    "int_created_date": {
+        "long": 1089029143
+    },
+    "int_created_date_str": {
+        "string": "20040705120543+0700"
+    },
+    "int_updated_date": {
+        "long": 1089029143
+    },
+    "int_updated_date_str": {
+        "string": "20040705120543+0700"
+    },
+    "int_is_deleted": {
+        "string": "IdMHJljj"
+    },
+    "description_data": {
+        "string": "IdMHJljj"
+    }
+}

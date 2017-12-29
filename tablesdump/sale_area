@@ -1,0 +1,26 @@
+CREATE TABLE sale_area (
+    sale_area_pk bigint NOT NULL,
+    int_updated_date timestamp with time zone,
+    int_created_date timestamp with time zone DEFAULT now(),
+    int_is_deleted text,
+    sale_area_id_key_0 text,
+    distribution_group_key_4 text,
+    title_data text,
+    zip_code_id_key_1 text,
+    province_code_key_2 text,
+    sale_area_code_data text,
+    sale_area_name_data text,
+    sale_region_code_key_3 text,
+    province_flg_data text,
+    amphur_flg_data text,
+    tumbol_flg_data text,
+    mooban_data text,
+    building_data text,
+    room_data text,
+    created_data timestamp with time zone,
+    created_by_data text,
+    last_upd_data timestamp with time zone,
+    last_upd_by_data text,
+    modification_num_data text
+)
+DISTRIBUTE BY REPLICATION;

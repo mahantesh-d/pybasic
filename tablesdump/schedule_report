@@ -1,0 +1,18 @@
+CREATE TABLE schedule_report (
+    schedule_report_pk bigint NOT NULL,
+    report_name_key0 text,
+    report_type_key1 text,
+    location_code_data text,
+    report_link_file_data text,
+    status_data text,
+    reason_data text,
+    create_by_data text,
+    create_datetime_data timestamp with time zone,
+    update_by_data text,
+    update_datetime_key3 timestamp with time zone,
+    int_is_deleted text,
+    report_date_key2 date,
+    int_updated_date timestamp with time zone,
+    int_created_date timestamp with time zone DEFAULT now()
+)
+DISTRIBUTE BY REPLICATION;

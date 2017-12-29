@@ -1,0 +1,28 @@
+CREATE TABLE reserve (
+    reserve_pk bigint NOT NULL,
+    int_updated_date timestamp with time zone,
+    int_created_date timestamp with time zone DEFAULT now(),
+    int_is_deleted text,
+    transaction_id text,
+    transaction_type text,
+    reserve_status text,
+    location_code text,
+    location_name text,
+    location_type text,
+    location_sub_type text,
+    location_region text,
+    location_sub_region text,
+    location_province text,
+    create_by text,
+    create_datetime timestamp with time zone,
+    update_by text,
+    update_datetime timestamp with time zone,
+    reserve_detail text[],
+    reserve_key text,
+    reserve_no_ref text,
+    reserve_no_type text,
+    reserve_channel text
+)
+DISTRIBUTE BY REPLICATION;
+    START WITH 1
+    INCREMENT BY 1

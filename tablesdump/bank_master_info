@@ -1,0 +1,18 @@
+CREATE TABLE bank_master_info (
+    bank_master_info_pk bigint NOT NULL,
+    int_updated_date timestamp with time zone,
+    int_created_date timestamp with time zone DEFAULT now(),
+    int_is_deleted text,
+    bank_key_key_0 text,
+    bank_name_en_data text,
+    bank_code_data text,
+    branch_code_data text,
+    bank_name_th_data text,
+    branch_name_en_data text,
+    created_data timestamp with time zone,
+    created_by_data text,
+    last_upd_data timestamp with time zone,
+    last_upd_by_data text,
+    modification_num_data text
+)
+DISTRIBUTE BY REPLICATION;

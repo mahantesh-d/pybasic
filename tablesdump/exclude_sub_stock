@@ -1,0 +1,13 @@
+CREATE TABLE exclude_sub_stock (
+    exclude_sub_stock_pk bigint NOT NULL,
+    int_updated_date timestamp with time zone,
+    int_created_date timestamp with time zone DEFAULT now(),
+    int_is_deleted text,
+    transaction_type_key0 text,
+    sub_stock_key1 text,
+    create_by_data text,
+    create_datetime_data timestamp with time zone,
+    update_by_data text,
+    update_datetime_key2 timestamp with time zone
+)
+DISTRIBUTE BY REPLICATION;

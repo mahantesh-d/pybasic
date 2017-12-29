@@ -1,0 +1,20 @@
+CREATE TABLE asc_master (
+    asc_code_key0 text,
+    asc_name_data text,
+    asc_type_data text,
+    asc_subtype_data text,
+    asc_class_data text,
+    asc_status_data text,
+    asc_contact_no_data text,
+    location_code_data text,
+    create_by_data text,
+    create_datetime_data timestamp with time zone,
+    update_by_data text,
+    update_datetime_key1 timestamp with time zone,
+    asc_master_pk bigint NOT NULL,
+    int_created_date timestamp with time zone DEFAULT now(),
+    int_updated_date timestamp with time zone,
+    int_is_deleted text,
+    van_location_code_data text
+)
+DISTRIBUTE BY HASH (asc_code_key0);

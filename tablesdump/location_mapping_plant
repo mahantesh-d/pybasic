@@ -1,0 +1,16 @@
+CREATE TABLE location_mapping_plant (
+    location_code_key0 text,
+    company_key1 text,
+    plant_key2 text,
+    storage_key3 text,
+    active_flag_key4 text,
+    create_by_data text,
+    create_datetime_data timestamp with time zone,
+    update_by_data text,
+    update_datetime_key5 timestamp with time zone,
+    location_mapping_plant_pk bigint NOT NULL,
+    int_created_date timestamp with time zone DEFAULT now(),
+    int_updated_date timestamp with time zone,
+    int_is_deleted text
+)
+DISTRIBUTE BY HASH (location_mapping_plant_pk);

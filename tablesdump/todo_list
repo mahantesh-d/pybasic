@@ -1,0 +1,19 @@
+CREATE TABLE todo_list (
+    program_code_key0 text,
+    todo_list_module_key1 text,
+    todo_list_picture_data text,
+    todo_list_color_data text,
+    method_total_data text,
+    link_to_menu_data text,
+    active_flag_data text,
+    priority_data text,
+    create_by_data text,
+    create_datetime_data timestamp with time zone,
+    update_by_data text,
+    update_datetime_key2 timestamp with time zone,
+    todo_list_pk bigint NOT NULL,
+    int_created_date timestamp with time zone DEFAULT now(),
+    int_updated_date timestamp with time zone,
+    int_is_deleted text
+)
+DISTRIBUTE BY HASH (todo_list_pk);

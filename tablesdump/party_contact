@@ -1,0 +1,22 @@
+CREATE TABLE party_contact (
+    party_contact_pk bigint NOT NULL,
+    int_updated_date timestamp with time zone,
+    int_created_date timestamp with time zone DEFAULT now(),
+    int_is_deleted text,
+    party_type_code_data text,
+    company_id_key_0 text,
+    license_code_key_1 text,
+    location_code_key_2 text,
+    main_contact_person_flg_data text,
+    person_id_key_3 text,
+    role_id_key_4 text,
+    phone_id_key_5 text,
+    social_id_key_6 text,
+    created_data timestamp with time zone,
+    created_by_data text,
+    last_upd_data timestamp with time zone,
+    last_upd_by_data text,
+    modification_num_data text,
+    party_contact_id_key_7 text
+)
+DISTRIBUTE BY REPLICATION;

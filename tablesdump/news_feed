@@ -1,0 +1,20 @@
+CREATE TABLE news_feed (
+    news_title_key0 text,
+    news_datetime_key1 timestamp with time zone,
+    news_detail_data text,
+    active_flag_data text,
+    news_start_data timestamp with time zone,
+    news_end_data timestamp with time zone,
+    news_link_data text,
+    priority_data text,
+    create_by_data text,
+    create_datetime_data timestamp with time zone,
+    update_by_data text,
+    update_datetime_key2 timestamp with time zone,
+    news_feed_pk bigint NOT NULL,
+    int_created_date timestamp with time zone DEFAULT now(),
+    int_updated_date timestamp with time zone,
+    int_is_deleted text,
+    news_group_data text[]
+)
+DISTRIBUTE BY HASH (news_title_key0);

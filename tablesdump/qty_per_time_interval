@@ -1,0 +1,21 @@
+CREATE TABLE qty_per_time_interval (
+    event_date_key0 text,
+    location_code_key1 text,
+    sub_stock_key2 text,
+    company_key3 text,
+    mat_code_key4 text,
+    event_type_key5 text,
+    time_interval_type_data text,
+    create_by_data text,
+    create_datetime_data timestamp with time zone,
+    update_by_data text,
+    update_datetime_data_key6 timestamp with time zone,
+    qty_per_time_interval_pk bigint NOT NULL,
+    int_created_date timestamp with time zone DEFAULT now(),
+    int_updated_date timestamp with time zone,
+    int_is_deleted text,
+    time_interval_counter_data integer DEFAULT 0 NOT NULL,
+    qty_data integer DEFAULT 0 NOT NULL,
+    event_date_key0_new timestamp with time zone
+)
+DISTRIBUTE BY REPLICATION;

@@ -1,0 +1,26 @@
+CREATE TABLE sale_person (
+    sale_person_pk bigint NOT NULL,
+    int_updated_date timestamp with time zone,
+    int_created_date timestamp with time zone DEFAULT now(),
+    int_is_deleted text,
+    person_id_key_0 text,
+    person_code_key_1 text,
+    person_type_data text,
+    member_category_data text,
+    member_class_data text,
+    member_reason_data text,
+    user_name_data text,
+    email_data text,
+    status_data text,
+    status_reason_data text,
+    first_start_dt_data timestamp with time zone,
+    resign_dt_data timestamp with time zone,
+    asc_mobile_no_data text,
+    remark_data text,
+    created_data timestamp with time zone,
+    created_by_data text,
+    last_upd_data timestamp with time zone,
+    last_upd_by_data text,
+    modification_num_data text
+)
+DISTRIBUTE BY REPLICATION;

@@ -1,0 +1,20 @@
+CREATE TABLE history (
+    history_pk bigint NOT NULL,
+    int_updated_date timestamp with time zone,
+    int_created_date timestamp with time zone DEFAULT now(),
+    int_is_deleted text,
+    id text,
+    time_stamp timestamp with time zone,
+    user_id text,
+    main_menu text,
+    sub_menu text,
+    data_type text,
+    action_type text,
+    action_status text,
+    company_id text,
+    license_code text,
+    location_code text,
+    vat_address text,
+    application_specific_data text[]
+)
+DISTRIBUTE BY REPLICATION;

@@ -1,0 +1,9 @@
+CREATE TABLE mapping_distribution (
+    int_updated_date timestamp with time zone,
+    int_created_date timestamp with time zone DEFAULT now(),
+    distributor_chn_sale_code_key_0 text,
+    retail_chn_sale_code_key_1 text,
+    distribution_group_key_2 text,
+    created_data timestamp with time zone,
+    created_by_data text,
+    last_upd_data timestamp with time zone,

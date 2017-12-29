@@ -1,0 +1,25 @@
+CREATE TABLE transaction_log (
+    table_name text,
+    row_id text,
+    msisdn text,
+    sim_serial_no text,
+    cano text,
+    bano text,
+    sano text,
+    username text,
+    order_date1 text,
+    order_no text,
+    record_status text,
+    error_msg text,
+    last_upd1 text,
+    retry_count text,
+    application_detail text[],
+    int_created_date timestamp with time zone DEFAULT now(),
+    int_updated_date timestamp with time zone,
+    order_date timestamp with time zone,
+    last_upd timestamp with time zone,
+    int_is_deleted text,
+    transaction_log_pk bigint NOT NULL
+)
+DISTRIBUTE BY HASH (transaction_log_pk);
+    START WITH 1

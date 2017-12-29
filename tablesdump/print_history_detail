@@ -1,0 +1,15 @@
+CREATE TABLE print_history_detail (
+    print_history_detail_pk bigint NOT NULL,
+    create_by text,
+    create_datetime timestamp with time zone,
+    print_result text,
+    transaction_id text,
+    transaction_type text,
+    update_by text,
+    update_datetime timestamp with time zone,
+    int_created_date timestamp with time zone DEFAULT now(),
+    int_updated_date timestamp with time zone,
+    int_is_deleted text,
+    edition_list text[]
+)
+DISTRIBUTE BY HASH (print_history_detail_pk);

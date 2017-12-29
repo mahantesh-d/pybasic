@@ -1,0 +1,21 @@
+CREATE TABLE app_config (
+config_name_key0 string,
+config_val1_data string,
+config_val2_data string,
+config_val3_data string,
+remark_data string,
+create_by_data string,
+create_datetime_data bigint,
+create_datetime_data_str string,
+update_by_data string,
+update_datetime_key1 bigint,
+update_datetime_key1_str string,
+app_config_pk int,
+int_created_date bigint,
+int_created_date_str string,
+int_updated_date bigint,
+int_updated_date_str string,
+int_is_deleted string,
+description_data string,
+)
+STORED AS AVRO;

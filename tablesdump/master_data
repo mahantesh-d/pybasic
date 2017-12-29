@@ -1,0 +1,26 @@
+CREATE TABLE master_data (
+    masterkey_key0 text,
+    mastervalue_key1 text,
+    subkey1_key3 text,
+    subkey2_key4 text,
+    subkey3_key5 text,
+    create_by_data text,
+    create_datetime_data timestamp with time zone,
+    update_by_data text,
+    update_datetime_key2 timestamp with time zone,
+    module_key13 text,
+    subkey4_key6 text,
+    subkey5_key7 text,
+    subkey6_key8 text,
+    subkey7_key9 text,
+    subkey8_key10 text,
+    subkey9_key11 text,
+    subkey10_key12 text,
+    description text,
+    active_flag text,
+    master_data_pk bigint NOT NULL,
+    int_created_date timestamp with time zone DEFAULT now(),
+    int_updated_date timestamp with time zone,
+    int_is_deleted text
+)
+DISTRIBUTE BY HASH (master_data_pk);

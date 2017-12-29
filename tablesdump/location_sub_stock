@@ -1,0 +1,13 @@
+CREATE TABLE location_sub_stock (
+    sub_stock_groupid_key0 text,
+    sub_stock_key2 text,
+    create_by_data text,
+    create_datetime_data timestamp with time zone,
+    update_by_data text,
+    update_datetime_key1 timestamp with time zone,
+    location_sub_stock_pk bigint NOT NULL,
+    int_created_date timestamp with time zone DEFAULT now(),
+    int_updated_date timestamp with time zone,
+    int_is_deleted text
+)
+DISTRIBUTE BY HASH (sub_stock_groupid_key0);

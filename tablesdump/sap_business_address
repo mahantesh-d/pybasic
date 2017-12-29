@@ -1,0 +1,23 @@
+CREATE TABLE sap_business_address (
+    sap_business_address_pk bigint NOT NULL,
+    int_updated_date timestamp with time zone,
+    int_created_date timestamp with time zone DEFAULT now(),
+    int_is_deleted text,
+    sap_code_key_0 text,
+    addr_1_data text,
+    addr_2_data text,
+    addr_3_data text,
+    addr_4_data text,
+    street_data text,
+    tumbol_code_data text,
+    amphur_code_data text,
+    province_code_data text,
+    postal_code_data text,
+    country_code_data text,
+    created_data timestamp with time zone,
+    created_by_data text,
+    last_upd_data timestamp with time zone,
+    last_upd_by_data text,
+    modification_num_data text
+)
+DISTRIBUTE BY REPLICATION;

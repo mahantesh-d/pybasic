@@ -1,0 +1,13 @@
+CREATE TABLE group_location (
+    group_location_name_key0 text,
+    location_code_data text,
+    create_by_data text,
+    create_datetime_data timestamp without time zone,
+    update_by_data text,
+    update_datetime_key1 timestamp without time zone,
+    group_location_pk bigint NOT NULL,
+    int_created_date timestamp without time zone DEFAULT now(),
+    int_updated_date timestamp without time zone,
+    int_is_deleted text
+)
+DISTRIBUTE BY HASH (group_location_name_key0);

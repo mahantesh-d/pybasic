@@ -1,0 +1,28 @@
+CREATE TABLE location_address (
+    location_address_pk bigint NOT NULL,
+    int_updated_date timestamp with time zone,
+    int_created_date timestamp with time zone DEFAULT now(),
+    int_is_deleted text,
+    location_code_key0 text,
+    address_type_key1 text,
+    house_no_data text,
+    building_data text,
+    floor_data text,
+    room_data text,
+    mooban_data text,
+    moo_data text,
+    soi_data text,
+    street_data text,
+    tumbol_data text,
+    amphur_data text,
+    province_data text,
+    country_data text,
+    zip_code_data text,
+    telephone_data text,
+    fax_data text,
+    create_by_data text,
+    create_date_time_data timestamp with time zone,
+    update_by_data text,
+    update_datetime_key2 timestamp with time zone
+)
+DISTRIBUTE BY REPLICATION;

@@ -1,0 +1,31 @@
+CREATE TABLE sub_stock_daily_detail (
+    sub_stock_daily_detail_pk bigint NOT NULL,
+    controller_name text,
+    create_by text,
+    create_datetime timestamp with time zone,
+    daily_status text,
+    date_for_sales timestamp with time zone,
+    device_payment_name text,
+    location_code text,
+    location_name text,
+    location_province text,
+    location_region text,
+    location_sub_region text,
+    location_subtype text,
+    location_type text,
+    sales_for text,
+    substock_daily_detail text[],
+    substock_daily_detail_s text[],
+    substock_daily_no text,
+    transaction_id text,
+    transaction_type text,
+    update_by text,
+    update_datetime timestamp with time zone,
+    int_created_date timestamp with time zone DEFAULT now(),
+    int_updated_date timestamp with time zone,
+    int_is_deleted text
+)
+DISTRIBUTE BY HASH (sub_stock_daily_detail_pk);
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE

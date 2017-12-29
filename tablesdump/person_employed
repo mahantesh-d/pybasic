@@ -1,0 +1,15 @@
+CREATE TABLE person_employed (
+    person_employed_pk bigint NOT NULL,
+    int_updated_date timestamp with time zone,
+    int_created_date timestamp with time zone DEFAULT now(),
+    int_is_deleted text,
+    person_code_key_0 text,
+    entry_dt_data timestamp with time zone,
+    end_dt_data timestamp with time zone,
+    created_data timestamp with time zone,
+    created_by_data text,
+    last_upd_data timestamp with time zone,
+    last_upd_by_data text,
+    modification_num_data text
+)
+DISTRIBUTE BY REPLICATION;

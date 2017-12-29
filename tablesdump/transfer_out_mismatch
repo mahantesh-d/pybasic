@@ -1,0 +1,20 @@
+CREATE TABLE transfer_out_mismatch (
+    transfer_out_mismatch_pk bigint NOT NULL,
+    company text,
+    create_by text,
+    create_datetime timestamp with time zone,
+    data_error_datetime timestamp with time zone,
+    mismatch_detail text[],
+    mismatch_detail_s text[],
+    request_no text,
+    transaction_id text,
+    transaction_type text,
+    transfer_out_datetime timestamp with time zone,
+    update_by text,
+    update_datetime timestamp with time zone,
+    int_created_date timestamp with time zone DEFAULT now(),
+    int_updated_date timestamp with time zone,
+    int_is_deleted text
+)
+DISTRIBUTE BY HASH (transfer_out_mismatch_pk);
+    START WITH 1
